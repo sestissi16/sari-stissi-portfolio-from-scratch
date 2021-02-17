@@ -1,0 +1,260 @@
+#theGuardianContainer {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    background: 
+        /* linear-gradient(
+            rgba(54, 47, 24, 0.445), 
+            rgba(54, 47, 24, 0.445)
+        ), */
+        url('../Media/oldParchmentWallpaper.jpg');
+    background-size: cover;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* padding: 2%; */
+}
+
+#gameHomeContainer {
+    height: 85%;
+    width: 90%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    background-color: rgba(248, 240, 213, 0.575);
+    /* padding: 5% 0%; */
+}
+
+#gameHomeSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+    /* min-height: stretch; */
+    padding: 2% 2%;
+    font-size: 1.6em;
+    border-right: solid rgba(82, 65, 10, 0.767) 0.09em;
+}
+
+.guardianHomeFileType {
+    font-size: 1em;
+}
+
+#downloadGameFile a, #playGameLink a, #portfolioLink a, #playinfo a {
+    color: darkblue;
+}
+
+#downloadGameFile a:hover, #playGameLink a:hover, #portfolioLink a:hover, #playinfo a:hover {
+    color: rgb(12, 78, 221);
+}
+
+#downloadGameFile a:visited, #playGameLink a:visited, #portfolioLink a:visited, #playinfo a:visited {
+    color: rgb(88, 27, 231);
+}
+
+#gameHomeMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    width: 70%;
+    height: 100%;
+    padding: 2% 2%;
+}
+
+#introduction {
+    padding: 0% 0% 3%;
+    width: 100%;
+    border-bottom: solid rgba(82, 65, 10, 0.767) 0.2em;
+    font-size: 1.6em;
+}
+
+.informAuthor {
+    font-size: 1.8em ;
+    padding: 1% 0% 2%;
+}
+
+#gameAbout {
+    padding: 3% 0% 1%;
+    width: 100%;
+    font-size: 1.8em;
+    overflow: auto;
+}
+
+#playinfo {
+    font-size: .77em;
+    padding: 2% 1% 0%;
+    border-top: solid rgba(82, 65, 10, 0.767) 0.15em;
+}
+
+@media (max-width: 768px){
+    /* the guardian home page */
+
+    #theGuardianContainer {
+        height: 100%;
+    }
+
+    #gameHomeContainer {
+        flex-direction: column;
+        height: 95%;
+        /* overflow: auto; */
+    }
+
+    #gameHomeSidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+        height: fit-content;
+        border-right: none;
+        border-bottom: solid rgba(82, 65, 10, 0.767) 0.09em;
+        padding: 2% 2% 1% 2%;
+    }
+
+    #coverimage {
+        width: 30%;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding: 0% 2%;
+        width: 70%;
+    }
+
+    #navTitle {
+        width: 35%;
+        font-size: 1.5em;
+        padding: 0% 0% 1% 0%;
+        text-align: center;
+        margin: none;
+    }
+
+    #linksList {
+        width: 65%;
+        padding: 0% 0% 0% 1%;
+        margin: none;
+    }
+
+    #gameHomeMainContainer {
+        width: 100%;
+        height: 80%;
+        overflow:auto;
+    }
+    
+    #gameAbout {
+        overflow: visible;
+    }
+}
+
+@media (max-width: 660px){
+    #gameHomeSidebar {
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        height: fit-content;
+        border-right: none;
+        border-bottom: solid rgba(82, 65, 10, 0.767) 0.09em;
+        padding: 2% 2% 1% 2%;
+    }
+
+    #coverimage {
+        width: 28%;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        padding: 0% 2%;
+        width: 72%;
+    }
+
+    #navTitle {
+        width: 35%;
+        font-size: 1.2em;
+        padding: 0% 0% 1% 0%;
+        text-align: center;
+        margin: none;
+    }
+
+    #linksList {
+        width: 65%;
+        padding: 0% 0% 0% 1%;
+        margin: none;
+        font-size: 0.9em;
+    }
+
+    .guardianHomeFileType {
+        font-size: 0.85em;
+    }
+
+    #gameHomeMainContainer {
+        width: 100%;
+        height: 90%;
+        overflow:auto;
+    }
+}
+
+@media (max-width: 490px) {
+    #gameHomeSidebar {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        height: fit-content;
+        border-right: none;
+        border-bottom: solid rgba(82, 65, 10, 0.767) 0.09em;
+        padding: 2% 2% 1% 2%;
+    }
+
+    #coverimage {
+        width: 40%;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0% 0%;
+        width: 60%;
+    }
+
+    #navTitle {
+        width: 100%;
+        font-size: 1.2em;
+        padding: 0%;
+        text-align: center;
+        margin: none;
+    }
+
+    #linksList {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .guardianHomeFileType {
+        font-size: 0.85em;
+    }
+}

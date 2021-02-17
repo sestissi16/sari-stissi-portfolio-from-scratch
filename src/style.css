@@ -1,0 +1,578 @@
+/*
+
+Standard CSS file for use with Standard.html and Standard-Source.html. 
+
+*/
+
+
+body
+{
+	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+	font-size: 100%;
+	-webkit-text-size-adjust: none;
+}
+
+#theGuardianPlayContainer {
+	height: 100%;
+    width: 100%;
+    background: 
+        /* linear-gradient(
+            rgba(54, 47, 24, 0.445), 
+            rgba(54, 47, 24, 0.445)
+        ), */
+        url('./Media/oldParchmentWallpaper.jpg');
+    background-size: cover;
+}
+
+#container
+{
+	/* padding-top: 2em; */
+	background-color: rgba(255, 238, 180, 0.541);
+	color: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: flex-start;
+}
+
+#sidebar {
+	width: 100%;
+	height: 15%;
+	border-right: solid rgba(82, 65, 10, 0.767) 0.09em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding: 1%;
+	margin: 0% 0% 3%;
+}
+
+/* 
+Paragraph features defined here apply without distinction to blurb and
+source paragraphs. 
+*/
+
+p
+{
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/* 
+Here we get rid of underlining for links, and provide a more subdued 
+color scheme than the bright-blue HTML standard. 
+
+Best color schemes are likely to vary depending on cover art.
+*/
+
+a
+{
+	text-decoration: none;
+	color: #369;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #006;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #33C;
+}
+
+.coverimage
+{
+	/* width: 12.6em;
+	margin-top: 2em;
+	margin-left: 1em;
+	float: left;
+	clear: left;
+	text-align: right; */
+	width: 30%;
+	height: 30%;
+} 
+
+/* 
+Here we make invisible the one-pixel border that currently goes around
+the cover image. 
+*/
+
+.coverimage a
+{
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+
+/* 
+The introduction formatting applies to the title, author name, and release
+number, here presented at the top of the page. 
+
+To change the appearance of specific elements, tweak
+
+	h1 for the title
+	h2 for the author name
+	.bibliography for the release information
+
+*/
+
+.introduction
+{ 
+	padding-top: 2.4em;
+	margin-left: 15.4em;
+	width: 33em;
+	line-height: 1;
+	text-align: left;
+}
+
+/* 
+These set the sizes for the title (h1) and the author name (h2). 
+
+The ideal font-size for h1 may vary quite a bit depending on how long the 
+game's title is: larger for one-word titles, smaller for longer titles.
+
+Should we wish to remove the title entirely and allow the cover art alone
+to represent the game, we need only add the line "display: none;" to the
+definition of h1.
+
+*/
+h1 { font-size: 2em;  }
+h2 { font-size: 1em; line-height: .25;}
+
+/* The about formatting applies to blurb information. */
+
+.about
+{
+	margin-top: 2.8em;
+	margin-left: 15.4em;
+	width: 33em;
+	text-align: left;
+}
+
+/* 
+By setting about p and about p + p, we instruct the first paragraph of the
+blurb to be unindented but subsequent paragraphs to be indented a small 
+distance. 
+*/
+
+.about p { margin-bottom: 0; }
+
+.about p + p
+{
+	text-indent: 1.4em;
+	margin-top: 0;
+}
+
+/* 
+Playinfo affects the paragraph at the bottom of the home-page that supplies
+the IFID for the game and suggests interpreters for the author to use. */
+
+.playinfo
+{
+	margin: 1em 0px 0px 15.4em;
+	width: 33em;
+}
+
+.playinfo p {
+	font-size: .75em;
+}
+
+
+/* 
+The links formatting applies to the story file and auxiliary links found
+on the home page, and to the Contents, Next, and Previous links on the 
+source pages. Here we arrange for them to appear in a column at the left
+side of the page. 
+*/
+
+.links
+{
+	width: 13em;
+	float: left;
+	clear: left;
+	text-align: right; 
+	margin-top: 2.8em;
+}
+
+.links li
+{
+	list-style-type: none;
+	list-style-position: default;
+	padding: .4 em;
+}
+
+/* 
+The filetype id applies only to the little (blorb), (pdf), and similar
+denotations found on the links. Here we make these appear smaller than the 
+surrounding text. In order to get rid of them entirely, we would add 
+"display: none;" to our filetype definition. 
+*/ 
+
+span.filetype { font-size: .5em; }
+
+/* 
+Source formatting applies to the source text on generated pages. 
+*/
+
+.source
+{
+	margin-top: 1.4em;
+	margin-left: 15.4em;
+	width: 33em;
+	line-height: 1.4;
+}
+
+.sourceintroduction
+{
+	margin-left: 15.4em;
+	width: 33em;
+}
+
+.sourceintroduction h1
+{
+	padding-top: 2.8em;
+	font-size: 1em;
+	line-height: 1;
+	text-align: right;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.sourceintroduction h2
+{
+	display: none;
+}
+
+.sourcecoverimage
+{
+	width: 12.6em;
+	margin-top: 2em;
+	margin-left: 1em;
+	float: left;
+	clear: left;
+	text-align: right;
+} 
+
+/* 
+Here we make invisible the one-pixel border that currently goes around
+the cover image. 
+*/
+
+.sourcecoverimage a
+{
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+
+.sourcebibliography
+{
+	display: none;
+}
+
+span.quote { color: #369; }
+
+span.comment {
+	color: #390;}
+
+span.substitution
+{
+	color: #69B;
+	font-variant: small-caps;
+}
+	
+span.i6code { color: #666; font-family: monospace; }
+
+span.columnhead { 
+	font-style: italic; 
+	font-size: 1em;
+}
+
+span.heading
+{
+	font-weight: bold;
+} 
+
+.source td
+{
+	padding-top: .7em;
+	padding-bottom: .7em;
+	padding-right: 1.4em;
+	font-size: .75em;
+	text-align: left;
+	vertical-align: top;
+} 
+
+/*
+We could alter the following in order to make the footnote links in the source
+text appear different from other links, but otherwise they will be the same
+color as other links -- which is fine as a default.
+*/
+
+span.notecue
+{
+	font-size: .75em;
+	vertical-align: super;
+}
+
+/* 
+Here we tell the elements of the table of contents not to be listed with
+bullets because this tends to produce considerable visual clutter especially
+with large project files. 
+*/
+
+.source li
+{
+	list-style-type: none;
+	list-style-position: default;
+}
+
+/* 
+Notes applies to footnotes on the source text. 
+*/
+
+.notes
+{
+	margin-left: 16.8em;
+	width: 33em;
+}
+
+.notes p
+{
+	text-indent: -1.4em;
+	font-size: .75em;
+}
+
+.notesheading { font-style: italic; }
+
+p.indent0 
+{	margin-bottom: 0;  
+}
+
+p.indent1 
+{
+	padding-left: 2.8em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent2 
+{	margin-bottom: 0; 
+	padding-left: 5.6em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent3 
+{
+	padding-left: 8.4em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent4
+{	margin-bottom: 0; 
+	padding-left: 11.2em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent5
+{
+	padding-left: 14em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent6
+{	margin-bottom: 0; 
+	padding-left: 16.8em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent7
+{
+	padding-left: 19.6em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+
+p.indent8
+{	margin-bottom: 0; 
+	padding-left: 22.4em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent9
+{
+	padding-left: 25.2em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/*
+Styles for play.html
+*/
+
+#sidebar .coverimage {
+	width: 30%;
+	height: 100%;
+}
+
+#sidebarImageSpan, #sidebarImageLink, #sidebarImage {
+	height: 100%;
+	width: 100%;
+}
+
+#sidebar .links
+{
+	padding: 0% 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	width: 60%;
+	margin: 0%;
+}
+
+#playGameTitle {
+	margin: 0% 0% 1%;
+	font-size: 3em;
+}
+
+#playLinksList {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	font-size: 2em;
+	margin: 0%;
+	width: 100%;
+}
+
+.playLinksItem {
+	padding: 0% 2%;
+	text-align: center;
+	width: 46%;
+}
+
+.interpretercredit
+{
+	width: 10%;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+#gameport
+{
+	background: rgba(255, 232, 156, 0);
+	bottom: 0px;
+	left: 0px;
+	line-height: 1.4;
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: 15%;
+	height: 85%;
+	width: 100%;
+}
+
+#windowport {
+	background: rgba(255, 232, 156, 0);
+}
+
+.BufferWindow {
+	background: rgba(255, 224, 158, 0.527);
+	width: 100%;
+
+}
+
+.Input {
+	min-width: none !important;
+	max-width: none !important;
+	height: 3em;
+	padding: 1% !important;
+	margin: 0% 0% 1% !important;
+}
+
+/*
+Styles for mobile browsers: change to a one-column layout.
+*/
+
+@media (max-width: 480px)
+{	
+	#playGameTitle {
+		margin: 0% 0% 1%;
+		font-size: 2.2em !important;
+	}
+	
+	#playLinksList {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+		align-items: flex-start;
+		font-size: 1.2em !important;
+		margin: 0%;
+		width: 100%;
+	}
+	
+	.interpretercredit
+	{
+		width: 10%;
+		font-size: 0.7em !important;
+		text-align: center;
+	}
+
+	#gameport
+	{
+		left: 0px;
+		width: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	#playGameTitle {
+		margin: 0% 0% 1%;
+		font-size: 2.5em;
+	}
+	
+	#playLinksList {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+		align-items: flex-start;
+		font-size: 1.5em;
+		margin: 0%;
+		width: 100%;
+	}
+	
+	.interpretercredit
+	{
+		width: 10%;
+		font-size: 1.1em;
+		text-align: center;
+	}
+}
