@@ -1,0 +1,57 @@
+! Blurb file created by Inform build 6M62
+
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.inform"
+release to "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "The Guardian.gblorb"
+storyfile "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.inform\Build\output.ulx" include
+ifiction "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.inform\Metadata.iFiction" include
+cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Small Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "96DCD0D5-F8CE-467A-9038-F6E9E741E9ED"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2018"
+placeholder [TITLE] = "The Guardian"
+placeholder [AUTHOR] = "Sari Stissi"
+placeholder [BLURB] = "You are a woman in ancient Greece on the Island of Sarpedon and you have no idea who you are. What happened? Who are you really?<br/>You are encouraged to check the [bold type]help[roman type] list to know the commands you will need for this game and how to use them. Also [bold type]examine[roman type] is a [italic type]very[roman type] useful command in this game. [line break]And you are encouraged to look at the top of your screen where you can see a status line. It's a different color than the rest of the page and you can see where your exits are, the name of the room you're in and a reminder for how to access the help list. [line break]The Exits are abbreviated so: [line break]N is North [line break]S is South [line break]E is East [line break]W is West [line break]NW is Northwest [line break]NE is Northeast [line break]SW is Southwest [line break]SE is Southest [line break]D is Down [line break]U is Up [line break]Consult the help list for more info!"
+
+! Other material to release
+
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "The Guardian.gblorb.js"
+template path "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.materials\Templates"
+template path "C:\Users\Sari S\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.inform\Build\output.ulx" to "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.materials\Release\interpreter\The Guardian.gblorb.js"
+
+! Website instructions
+
+template path "C:\Users\Sari S\Documents\Inform\Projects\The Gaurdian.materials\Templates"
+template path "C:\Users\Sari S\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||

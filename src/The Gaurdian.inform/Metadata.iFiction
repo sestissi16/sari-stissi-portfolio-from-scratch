@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>96DCD0D5-F8CE-467A-9038-F6E9E741E9ED</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>The Guardian</title>
+            <author>Sari Stissi</author>
+            <headline>An Interactive Exploration</headline>
+            <genre>Fantasy</genre>
+            <firstpublished>2018</firstpublished>
+            <description>You are a woman in ancient Greece on the Island of Sarpedon and you have no idea who you are. What happened? Who are you really?<br/>You are encouraged to check the [bold type]help[roman type] list to know the commands you will need for this game and how to use them. Also [bold type]examine[roman type] is a [italic type]very[roman type] useful command in this game. [line break]And you are encouraged to look at the top of your screen where you can see a status line. It's a different color than the rest of the page and you can see where your exits are, the name of the room you're in and a reminder for how to access the help list. [line break]The Exits are abbreviated so: [line break]N is North [line break]S is South [line break]E is East [line break]W is West [line break]NW is Northwest [line break]NE is Northeast [line break]SW is Southwest [line break]SE is Southest [line break]D is Down [line break]U is Up [line break]Consult the help list for more info!</description>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2020-05-21</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6M62</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6M62</generatorversion>
+            <originated>2020-05-21</originated>
+        </colophon>
+        <glulx>
+            <serial>200521</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6M62</compiler>
+        </glulx>
+    </story>
+</ifindex>
