@@ -1,0 +1,10 @@
+.custom-navbar-bg {
+    background-color: #251605;
+    width: 100%;
+    color: white;
+
+}
+
+#navbarContainer {
+    height: 5rem;
+}
