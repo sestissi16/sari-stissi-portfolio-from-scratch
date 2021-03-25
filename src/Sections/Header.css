@@ -1,3 +1,17 @@
 #Header {
-    margin: 5rem 0rem 0rem;
+    padding-top: 5rem;
+    background: #161415 url(../Media/caryatids_acropolis_athens.jpg) no-repeat top center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerBanner {
+    height: 80%;
+    width: 80%;
+    background-color: #161416c7;
 }
