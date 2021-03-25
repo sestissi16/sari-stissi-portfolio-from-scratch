@@ -5,13 +5,13 @@ import './NavbarComp.css'
 class NavbarComp extends Component {
     render(){
         return (
-            <Navbar id="navbarContainer" bg="dark" variant="dark" fixed="top" className="custom-navbar-bg">
-                <Navbar.Brand href="#home">Sari Stissi</Navbar.Brand>
-                <Nav className="ml-auto">
-                    <Nav.Link href="#About">About</Nav.Link>
-                    <Nav.Link href="#Resume">Resume</Nav.Link>
-                    <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-                    <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Navbar id="navbarContainer" fixed="top" className="custom-navbar-bg">
+                <Navbar.Brand className="smoothscroll" href="#home"><h1 id="navBarBrand">Sari Stissi</h1></Navbar.Brand>
+                <Nav className="navBarLinkCont">
+                    <Nav.Link className="navBarLink smoothscroll" href="#About">About</Nav.Link>
+                    <Nav.Link className="navBarLink smoothscroll" href="#Resume">Resume</Nav.Link>
+                    <Nav.Link className="navBarLink smoothscroll" href="#Portfolio">Portfolio</Nav.Link>
+                    <Nav.Link className="navBarLink smoothscroll" href="#Contact">Contact</Nav.Link>
                 </Nav>
             </Navbar>
         );
