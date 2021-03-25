@@ -1,10 +1,30 @@
 .custom-navbar-bg {
-    background-color: #251605;
+    background-color: #130b02cc !important;
     width: 100%;
     color: white;
 
 }
 
 #navbarContainer {
-    height: 5rem;
+    height: 4rem;
+}
+
+#navBarBrand {
+    font-family: 'Allura', sans-serif;
+    margin: 0%;
+    color: white;
+}
+
+.navBarLinkCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.navBarLink {
+    font-family: 'Syne Mono', monospace;
+    font-size: large;
+    color: white !important;
+    margin: 0% 2%;
 }
