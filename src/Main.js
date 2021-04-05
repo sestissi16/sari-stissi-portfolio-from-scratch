@@ -8,11 +8,30 @@ import Contact from './Sections/Contact'
 import './Main.css'
 
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { height: 500 };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+    
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+    
+    updateWindowDimensions() {
+        this.setState({ height: window.innerHeight });
+    }
+
     render(){
         return (
             <div className="Main">
                 <NavbarComp/>
-                <Header/>
+                <Header height={this.state.height}/>
                 <About/>
                 <Resume/>
                 <Portfolio/>
